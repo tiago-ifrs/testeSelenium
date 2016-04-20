@@ -28,8 +28,8 @@ public class Selenium2Example  {
         WebElement element = driver.findElement(By.name("q"));
 
         // Enter something to search for
-        //element.sendKeys("Cheese!");
-        element.sendKeys("pudim.com.br");
+        element.sendKeys("Cheese!");
+        //element.sendKeys("pudim.com.br");
 
         // Now submit the form. WebDriver will find the form for us from the element
         element.submit();
@@ -49,6 +49,6 @@ public class Selenium2Example  {
         System.out.println("Page title is: " + driver.getTitle());
         
         //Close the browser
-        //driver.quit();
+        driver.quit();
     }
 }
